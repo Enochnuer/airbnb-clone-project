@@ -30,3 +30,43 @@
 - **DevOps Engineer**: Handles deployment, monitoring, and scaling of the backend services.
 - **QA Engineer**: Ensures the backend functionalities are thoroughly tested and meet quality standards.
 
+# Database Design
+- **Users Relationships**: Can list and view proterties, make a booking and ratings
+  - id
+  - name
+  - email
+- **Properties**: Relationships: Are added and viewed by Users and booked afterwards
+  - id
+  - location
+  - rooms
+  - name
+- **Bookings Relationships**: Bookings are made on ptoperties
+  - id
+  - date
+  - booked
+- **Reviews**. Relationships: Are made by Users on properties
+  - title
+  - text
+  - rating
+  - date
+- **Payments**. Relationships: Made by users when they book a particular property
+  - date
+  - amount
+  - success
+ 
+
+# Feature Breakdown
+- **User management** This will contain different users such as customers, Hotel managers and administrators.
+- **property management**: Will make it possible to insert new properties and provide further descriptions.
+- **Booking System**: This will enable potential customers to book their prefered properties of interest.
+- **payment Integration**: The customer will pay for the room through the payment system.
+API Security
+- **Authentication**: This feature will verify a user
+- **Authorization**: This will give permission to the user to perform actions when verification is completed.
+- **Rate limiting**: Feature to control the amount of ratings a verified user can do
+
+# CI/CD Pipeline
+CI/CD pipelines are a practice to improve software delivery throughout the software delivery lifecycle through automation.
+
+- **GitHub Actions**: GitHub Actions allows developers to create workflows that run when certain events happen in a repository, such as a pull request or a push to a branch. These workflows can then execute various tasks, including running tests, building applications, and deploying to different environments.
+- **Docker**: Allows devs to package applications with all the dependencies into a standardiaed unit for software development. It provides uniformity and the assurance that the application runs the same way in different environments from development to production.
